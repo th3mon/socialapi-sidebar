@@ -17,7 +17,7 @@ function getManifest() {
     // should be available for display purposes
     "description": "A simple example of a social sidebar",
     "author": "Shane Caraveo, Mozilla && Przemysław Szelenberger, Perform Media",
-    "homepageURL": "https://github.com/mixedpuppy/socialapi-sidebar/",
+    // "homepageURL": "https://github.com/mixedpuppy/socialapi-sidebar/",
 
     // optional
     "version": 1
