@@ -42,21 +42,21 @@ function goTo(url) { window.open(url, "shareWindow"); }
 </script>
 </head>
 <body contextmenu="mymenu">
+<!-- <iframe src="http://m.goal.com/" frameborder="0" width="300" height="300"> -->
+<!-- <iframe src="http://m.goal.com/" frameborder="0" width="300" height="300" mozbrowser mozapp='Manifest.webapp'>
+  <p>Your browser does not support iframes.</p>
+</iframe> -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="ajax-test.js"></script>
+<script>
+var
+  iframe = document.createElement("iframe"),
+  url = 'http://m.goal.com/s/en';
 
-
-<p>SocialAPI Simple Sidebar Example.</p>
-
-<p>The rest is just HTML!</p>
-
-<!-- This is just a normal HTML5 context menu -->
-<menu type="context" id="mymenu">
-<menu label="Share on...">
-  <menuitem label="Twitter" icon="http://www.twitter.com/favicons/favicon.png"
-	    onclick="goTo('//twitter.com/intent/tweet?text=' + document.title + ':  ' + window.location.href);"></menuitem>
-  <menuitem label="Facebook" icon="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8%2F9hAAAAX0lEQVQ4jWP4%2F%2F8%2FAyUYTFhHzjgDxP9JxGeQDSBVMxgTbUBCxer%2Fr999%2BQ8DJBuArJksA9A10s8AXIBoA0B%2BR%2FY%2FjD%2BEwoBoA1yT5v3PbdmCE8MAshhID%2FUMoDgzUYIBj0Cgi7ar4coAAAAASUVORK5CYII%3D"
-	    onclick="goTo('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
-</menu>
-</menu>
-
+document.body.appendChild(iframe);
+setTimeout(function() {
+  iframe.contentWindow.location.href=url;
+}, 2000);
+</script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+1. MASZ ZROBIĆ IFRAME'A PIERDOŁO :-)!!! -- i się za bardzo nie da. Raz działa a raz się plik chce ściągać tak jakby MIME nie było rozpoznawane.
