@@ -52,7 +52,16 @@ function goTo(url) { window.open(url, "shareWindow"); }
   iframe.setAttribute('frameborder', 0);
   document.body.style.overflow = 'hidden';
   document.body.appendChild(iframe);
-  iframe.contentWindow.location.href = url;
+
+  try {
+    iframe.contentWindow.location.href = url;
+  }
+
+  catch(e) {
+    setTimeout(function() {
+      iframe.contentWindow.location.href = url;
+    }, 2000);
+  }
 
   window.addEventListener('resize', function() {
     iframe.setAttribute('width', document.documentElement.clientWidth);
