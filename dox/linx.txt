@@ -6,3 +6,4 @@ http://stackoverflow.com/questions/3490062/how-to-debug-greasemonkey-script-with
 http://stackoverflow.com/questions/6239118/how-can-i-debug-a-firefox-extension-with-firebug
 https://developer.mozilla.org/en-US/docs/Building_an_Extension#Debugging_Extensions
 https://developer.mozilla.org/en-US/Add-ons/Setting_up_extension_development_environment
+
