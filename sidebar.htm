@@ -40,24 +40,8 @@ function goTo(url) { window.open(url, "shareWindow"); }
 // otherwise, it's just HTML, have fun!
 </script>
 </head>
-<!-- <body contextmenu="mymenu"> -->
-<!-- <iframe src="http://m.goal.com/s/en" frameborder="0" width="340" height="1000"></iframe> -->
 <body>
-<script>
-  var
-    iframe = document.createElement("iframe"),
-    url = 'http://m.goal.com/s/en';
-
-  iframe.setAttribute('height', 1000);
-  iframe.setAttribute('width', document.documentElement.clientWidth);
-  iframe.setAttribute('frameborder', 0);
-  document.body.style.overflow = 'hidden';
-  document.body.appendChild(iframe);
-  iframe.contentWindow.location.href = url;
-
-  window.addEventListener('resize', function() {
-    iframe.setAttribute('width', document.documentElement.clientWidth);
-  }, false);
-</script>
+<script src="js/inject-iframe.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
