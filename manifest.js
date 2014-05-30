@@ -2,8 +2,6 @@ var loc = location.href;
 var baseurl = loc.substring(0,loc.lastIndexOf('/'));
 
 function getManifest() {
-    console.log(baseurl);
-    console.log(baseurl+"/sidebar.htm");
   return {
     // currently required
     "name": "Goal Mozilla Sidebar Demo",

@@ -7,3 +7,9 @@ http://stackoverflow.com/questions/6239118/how-can-i-debug-a-firefox-extension-w
 https://developer.mozilla.org/en-US/docs/Building_an_Extension#Debugging_Extensions
 https://developer.mozilla.org/en-US/Add-ons/Setting_up_extension_development_environment
 
+DEMO :-)
+http://rawgit.com/th3mon/socialapi-sidebar/gh-pages/index.html
+https://github.com/th3mon/socialapi-sidebar
+
+Wydmuszka: (cokolwiek to znaczy)
+http://mozilla.qa.goal.com/en/mozilla-sidebar
