@@ -4,7 +4,7 @@
       var
         iframe = document.createElement('iframe');
 
-      iframe.setAttribute('height', 1000);
+      iframe.setAttribute('height', '100%');
       iframe.setAttribute('width', document.documentElement.clientWidth);
       iframe.setAttribute('frameborder', 0);
 
