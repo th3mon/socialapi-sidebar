@@ -1,7 +1,7 @@
-"description": "Goal.com social sidebar",
-"author": "http://performgroup.com/",
-
-
 We need put some information for Mozilla sidebar.
 Description - A short description of the provider service.
 Author - An author or company name.
+
+Below is what I already put in file:
+    "description": "Goal.com social sidebar",
+    "author": "PERFORM Group",
