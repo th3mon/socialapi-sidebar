@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Demo Social Service</title>
+</head>
+<script>
+var loc = location.href;
+var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+
+var data = {
+  // currently required
+  "name": "Demo Social Service",
+  "iconURL": baseurl+"/firefox16.png",
+  "icon32URL": baseurl+"/firefox32.png",
+  "icon64URL": baseurl+"/firefox64.png",
+
+  // at least one of these must be defined
+  "workerURL": baseurl+"/worker.js",
+  "sidebarURL": baseurl+"/sidebar.htm",
+  "shareURL": baseurl+"/share.html?url=%{url}",
+
+  // status buttons are scheduled for Firefox 26 or 27
+  "statusURL": baseurl+"/statusPanel.html",
+
+  // social bookmarks are available in Firefox 26
+  "markURL": baseurl+"/mark.html?url=%{url}",
+  // icons should be 32x32 pixels
+  "markedIcon": baseurl+"/unchecked.jpg",
+  "unmarkedIcon": baseurl+"/checked.jpg",
+
+  // should be available for display purposes
+  "description": "A short paragraph about this provider",
+  "author": "Shane Caraveo, Mozilla",
+  "homepageURL": "https://github.com/mixedpuppy/socialapi-demo/",
+
+  // optional
+  "version": "1.0"
+}
+
+function activate(node) {
+  var event = new CustomEvent("ActivateSocialFeature");
+  node.setAttribute("data-service", JSON.stringify(data));
+  node.dispatchEvent(event);
+}
+</script>
+<body>
+  <button onclick="activate(this)" title="activate the demo provider">Activate The Demo Provider</button>
+</body>
+</html>

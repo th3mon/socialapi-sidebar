@@ -12,7 +12,6 @@ function getManifest() {
     "icon64URL": baseurl+"/firefox64.png",
 
     // at least one of these must be defined
-    // "sidebarURL": baseurl+"/sidebar.htm",
     "sidebarURL": "http://mozilla.qa.goal.com/mozilla-sidebar",
 
     // should be available for display purposes
@@ -24,3 +23,4 @@ function getManifest() {
     "version": 1
   };
 }
+// https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Social_API/Manifest
