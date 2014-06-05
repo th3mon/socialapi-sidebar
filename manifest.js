@@ -12,7 +12,8 @@ function getManifest() {
     "icon64URL": baseurl+"/firefox64.png",
 
     // at least one of these must be defined
-    "sidebarURL": baseurl+"/sidebar.htm",
+    // "sidebarURL": baseurl+"/sidebar.htm",
+    "sidebarURL": "http://mozilla.qa.goal.com/mozilla-sidebar",
 
     // should be available for display purposes
     "description": "A simple example of a social sidebar",
