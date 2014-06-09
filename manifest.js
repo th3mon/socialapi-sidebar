@@ -15,8 +15,8 @@ function getManifest() {
     "sidebarURL": "http://mozilla-scores.qa.goal.com/mozilla-sidebar",
 
     // should be available for display purposes
-    "description": "Goal.com social sidebar",
-    "author": "PERFORM Group",
+    "description": "The definitive source for football news from around the world.",
+    "author": "Goal.com",
     // "homepageURL": "https://github.com/mixedpuppy/socialapi-sidebar/",
 
     // optional
